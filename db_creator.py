@@ -83,14 +83,32 @@ audit_data = {"01/01/2023": [{"Instrument_ID": "I-21",
                         "Time": "03:00 PM"
                         },
                        {
-                        "Instrument_Id": "I-44",
-                        "Event Type": "Check_Out",
-                        "Time": "03:00 PM"
-                        },
-                       {
                         "Instrument_Id": "I-04",
                         "Event Type": "Check_Out",
                         "Time": "03:00 PM"
                         }
                        ]}
 
+user_dict = {"users": [
+    {
+        "User_Name": "Mithileash",
+        "Role": "Automation"
+    },
+    {
+        "User_Name": "Naveen",
+        "Role": "DFT"
+    },
+    {
+        "User_Name": "Roshan",
+        "Role": "ATE"
+    },
+    {
+        "User_Name": "nivedha",
+        "Role": "Automation"
+    },
+    {
+        "User_Name": "Pugazhi",
+        "Role": "ATE"
+    }
+]
+}
