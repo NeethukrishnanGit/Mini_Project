@@ -3,6 +3,7 @@ import pymongo
 myclient = pymongo.MongoClient("mongodb://localhost:27017/")
 mydb = myclient["employee_asset_management"]
 
+
 Instrument_Collection = mydb["Instruments"]
 
 instruments_dict = {"Instruments": [
@@ -66,3 +67,30 @@ instruments_dict = {"Instruments": [
 }
 
 Instrument_Collection.insert_many(instruments_dict["Instruments"])
+
+
+audit_data = {"01/01/2023": [{"Instrument_ID": "I-21",
+                        "Event Type": "Check_Out",
+                        "Time": "11:00 AM"
+                        },
+                       {"Instrument_ID": "I-24",
+                        "Event Type": "Check_In",
+                        "Time": "11:30 AM"
+                        },
+                       {
+                        "Instrument_Id": "I-44",
+                        "Event Type": "Check_Out",
+                        "Time": "03:00 PM"
+                        },
+                       {
+                        "Instrument_Id": "I-44",
+                        "Event Type": "Check_Out",
+                        "Time": "03:00 PM"
+                        },
+                       {
+                        "Instrument_Id": "I-04",
+                        "Event Type": "Check_Out",
+                        "Time": "03:00 PM"
+                        }
+                       ]}
+
