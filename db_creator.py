@@ -68,7 +68,7 @@ instruments_dict = {"Instruments": [
 
 Instrument_Collection.insert_many(instruments_dict["Instruments"])
 
-
+Audit_Collection = mydb["Audit Data"]
 audit_data = {"01/01/2023": [{"Instrument_ID": "I-21",
                         "Event Type": "Check_Out",
                         "Time": "11:00 AM"
@@ -88,6 +88,9 @@ audit_data = {"01/01/2023": [{"Instrument_ID": "I-21",
                         "Time": "03:00 PM"
                         }
                        ]}
+
+Audit_Collection.insert_many(audit_data["01/01/2023"])
+
 
 user_Collection = mydb["users"]
 user_dict = {"users": [
