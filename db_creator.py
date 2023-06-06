@@ -89,6 +89,7 @@ audit_data = {"01/01/2023": [{"Instrument_ID": "I-21",
                         }
                        ]}
 
+user_Collection = mydb["users"]
 user_dict = {"users": [
     {
         "User_Name": "Mithileash",
@@ -112,3 +113,4 @@ user_dict = {"users": [
     }
 ]
 }
+user_Collection.insert_many(user_dict["users"])
