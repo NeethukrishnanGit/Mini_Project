@@ -11,7 +11,7 @@ instruments_dict = {"Instruments": [
         "name": "Prober",
         "type": "A",
         "description": "This is used to test wafer ",
-        "Available": True,
+        "Availability": True,
         "Check_IN": "12:00 AM",
         "Check_OUT": "11:00 AM"
     },
@@ -96,23 +96,23 @@ user_Collection = mydb["users"]
 user_dict = {"users": [
     {
         "User_Name": "Mithileash",
-        "Role": "Automation"
+        "Role": "Employee"
     },
     {
         "User_Name": "Naveen",
-        "Role": "DFT"
+        "Role": "Customer"
     },
     {
         "User_Name": "Roshan",
-        "Role": "ATE"
+        "Role": "Partner"
     },
     {
         "User_Name": "nivedha",
-        "Role": "Automation"
+        "Role": "Employee"
     },
     {
         "User_Name": "Pugazhi",
-        "Role": "ATE"
+        "Role": "Customer"
     }
 ]
 }
