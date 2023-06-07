@@ -2,8 +2,8 @@ import datetime
 
 import pymongo
 
-myclient = pymongo.MongoClient("mongodb://localhost:27017/")
-mydb = myclient["employee_asset_management"]
+myClient = pymongo.MongoClient("mongodb://localhost:27017/")
+mydb = myClient["employee_asset_management"]
 
 Instrument_Collection = mydb["instruments"]
 
@@ -72,7 +72,7 @@ instrument_ids = Instrument_Collection.insert_many(instruments_dict["instruments
 user_Collection = mydb["users"]
 user_dict = {"users": [
     {
-        "user_name": "Mithileash",
+        "user_name": "John",
         "role": "EMPLOYEE"
     },
     {
@@ -84,11 +84,11 @@ user_dict = {"users": [
         "role": "PARTNER"
     },
     {
-        "user_name": "nivedha",
+        "user_name": "Jessi",
         "role": "EMPLOYEE"
     },
     {
-        "user_name": "Pugazhi",
+        "user_name": "Ram",
         "role": "CUSTOMER"
     }
 ]
@@ -98,26 +98,26 @@ user_ids = user_Collection.insert_many(user_dict["users"])
 Audit_Collection = mydb["Audit Data"]
 audit_dict = {"02/11/2022": [
     {
-        "user_id": user_ids[0],
-        "instrument_id": instrument_ids[0],
+        "user_id": user_ids.inserted_ids[0],
+        "instrument_id": instrument_ids.inserted_ids[0],
         "event type": "check_out",
         "time": datetime.datetime(2022, 11, 2, 00, 00, 00)
     },
     {
-        "user_id": user_ids[1],
-        "instrument_id": instrument_ids[0],
+        "user_id": user_ids.inserted_ids[1],
+        "instrument_id": instrument_ids.inserted_ids[0],
         "event type": "check_out",
         "time": datetime.datetime(2022, 11, 2, 00, 00, 00)
     },
     {
-        "user_id": user_ids[0],
-        "instrument_id": instrument_ids[2],
+        "user_id": user_ids.inserted_ids[1],
+        "instrument_id": instrument_ids.inserted_ids[1],
         "event type": "check_out",
         "time": datetime.datetime(2022, 11, 2, 00, 00, 00)
     },
     {
-        "user_id": user_ids[1],
-        "instrument_id": instrument_ids[2],
+        "user_id": user_ids.inserted_ids[1],
+        "instrument_id": instrument_ids.inserted_ids[2],
         "event type": "check_out",
         "time": datetime.datetime(2022, 11, 2, 00, 00, 00)
     }
