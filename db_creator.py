@@ -96,26 +96,31 @@ user_dict = {"users": [
 user_ids = user_Collection.insert_many(user_dict["users"])
 
 Audit_Collection = mydb["Audit Data"]
-audit_data = {"01/01/2023": [{
-    "user_id": user_ids[0],
-    "Instrument_ID": instrument_ids[0],
-    "Event Type": "Check_Out",
-    "Time": datetime.datetime(2022, 11, 16, 00, 00, 00)
-},
-    {"Instrument_ID": "I-24",
-     "Event Type": "Check_In",
-     "Time": datetime.datetime(2022, 11, 16, 00, 00, 00)
-     },
+audit_dict = {"02/11/2022": [
     {
-        "Instrument_Id": "I-44",
-        "Event Type": "Check_Out",
-        "Time": datetime.datetime(2022, 11, 16, 00, 00, 00)
+        "user_id": user_ids[0],
+        "instrument_id": instrument_ids[0],
+        "event type": "check_out",
+        "time": datetime.datetime(2022, 11, 2, 00, 00, 00)
     },
     {
-        "Instrument_Id": "I-04",
-        "Event Type": "Check_Out",
-        "Time": datetime.datetime(2022, 11, 16, 00, 00, 00)
+        "user_id": user_ids[1],
+        "instrument_id": instrument_ids[0],
+        "event type": "check_out",
+        "time": datetime.datetime(2022, 11, 2, 00, 00, 00)
+    },
+    {
+        "user_id": user_ids[0],
+        "instrument_id": instrument_ids[2],
+        "event type": "check_out",
+        "time": datetime.datetime(2022, 11, 2, 00, 00, 00)
+    },
+    {
+        "user_id": user_ids[1],
+        "instrument_id": instrument_ids[2],
+        "event type": "check_out",
+        "time": datetime.datetime(2022, 11, 2, 00, 00, 00)
     }
 ]}
 
-Audit_Collection.insert_many(audit_data["01/01/2023"])
+audit_data = Audit_Collection.insert_many(audit_dict["02/11/2022"])
