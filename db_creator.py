@@ -72,24 +72,24 @@ instrument_ids = Instrument_Collection.insert_many(instruments_dict["Instruments
 user_Collection = mydb["users"]
 user_dict = {"users": [
     {
-        "User_Name": "Mithileash",
-        "Role": "Employee"
+        "user_name": "Mithileash",
+        "role": "EMPLOYEE"
     },
     {
-        "User_Name": "Naveen",
-        "Role": "Customer"
+        "user_name": "Naveen",
+        "role": "CUSTOMER"
     },
     {
-        "User_Name": "Roshan",
-        "Role": "Partner"
+        "user_name": "Roshan",
+        "role": "PARTNER"
     },
     {
-        "User_Name": "nivedha",
-        "Role": "Employee"
+        "user_name": "nivedha",
+        "role": "EMPLOYEE"
     },
     {
-        "User_Name": "Pugazhi",
-        "Role": "Customer"
+        "user_name": "Pugazhi",
+        "role": "CUSTOMER"
     }
 ]
 }

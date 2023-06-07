@@ -3,11 +3,11 @@ from enum import Enum
 
 
 class Roles(str, Enum):
-    Employee = "Employee"
-    Customer = "Customer"
-    Partner = "Partner"
+    EMPLOYEE = "EMPLOYEE"
+    CUSTOMER = "CUSTOMER"
+    PARTNER = "PARTNER"
 
 
 class User(BaseModel):
-    User_Name: str = Field(...)
-    Role: Roles = Field(...)
+    user_name: str = Field(...)
+    role: Roles = Field(...)
