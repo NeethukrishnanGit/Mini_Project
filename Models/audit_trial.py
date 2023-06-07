@@ -1,8 +1,8 @@
+from bson import ObjectId
 from pydantic import BaseModel, Field
 from enum import Enum
 from datetime import datetime
-from instrument import Instruments
-from user_info import User
+
 
 class Status(str, Enum):
     Check_out = "Check Out"
@@ -10,8 +10,7 @@ class Status(str, Enum):
 
 
 class Audit(BaseModel):
-    user_id: str = Field(...)
-    instrument_id: str = Field(default=Instruments.instrument_id)
+    user_id: ObjectId = Field(...)
+    instrument_id: ObjectId = Field(...)
     Event_Type: Status = Field(...)
     Date_Time: str = Field(default=datetime.utcnow())
-
