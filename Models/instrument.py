@@ -4,7 +4,6 @@ from typing import Optional
 
 
 class Instruments(BaseModel):
-    instrument_id: str = Field(...)
     name: str = Field(...)
     type: str = Field(...)
     description: Optional[str]
