@@ -7,7 +7,7 @@ mydb = myClient["employee_asset_management"]
 
 Instrument_Collection = mydb["instruments"]
 
-instruments_dict = {"instruments": [
+instruments =[
     {
         "name": "prober",
         "type": "A",
@@ -65,12 +65,12 @@ instruments_dict = {"instruments": [
         "check_out": datetime.datetime(2022, 11, 16, 00, 00, 00)
     }
 ]
-}
 
-instrument_ids = Instrument_Collection.insert_many(instruments_dict["instruments"])
+
+instrument_ids = Instrument_Collection.insert_many(instruments)
 
 user_Collection = mydb["users"]
-user_dict = {"users": [
+user_dict = [
     {
         "user_name": "John",
         "role": "EMPLOYEE"
@@ -92,11 +92,11 @@ user_dict = {"users": [
         "role": "CUSTOMER"
     }
 ]
-}
-user_ids = user_Collection.insert_many(user_dict["users"])
+
+user_ids = user_Collection.insert_many(user_dict)
 
 Audit_Collection = mydb["Audit Data"]
-audit_dict = {"02/11/2022": [
+audit_dict = [
     {
         "user_id": user_ids.inserted_ids[0],
         "instrument_id": instrument_ids.inserted_ids[0],
@@ -121,6 +121,6 @@ audit_dict = {"02/11/2022": [
         "event type": "check_in",
         "time": datetime.datetime(2022, 11, 2, 00, 00, 00)
     }
-]}
+]
 
-audit_data = Audit_Collection.insert_many(audit_dict["02/11/2022"])
+audit_data = Audit_Collection.insert_many(audit_dict)
