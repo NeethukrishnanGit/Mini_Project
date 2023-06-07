@@ -5,11 +5,11 @@ import pymongo
 myclient = pymongo.MongoClient("mongodb://localhost:27017/")
 mydb = myclient["employee_asset_management"]
 
-Instrument_Collection = mydb["Instruments"]
+Instrument_Collection = mydb["instruments"]
 
-instruments_dict = {"Instruments": [
+instruments_dict = {"instruments": [
     {
-        "name": "Prober",
+        "name": "prober",
         "type": "A",
         "description": "This is used to test wafer ",
         "availability": True,
@@ -17,7 +17,7 @@ instruments_dict = {"Instruments": [
         "check_out": datetime.datetime(2022, 11, 16, 00, 00, 00)
     },
     {
-        "name": "Handler",
+        "name": "handler",
         "type": "A",
         "description": "This used to test packaged device and place the component for testing",
         "availability": True,
@@ -25,7 +25,7 @@ instruments_dict = {"Instruments": [
         "check_out": datetime.datetime(2022, 11, 16, 00, 00, 00)
     },
     {
-        "name": "Manipulator",
+        "name": "manipulator",
         "type": "C",
         "description": "This is used to support and tilt the test head",
         "availability": True,
@@ -33,7 +33,7 @@ instruments_dict = {"Instruments": [
         "Check_out": datetime.datetime(2022, 11, 16, 00, 00, 00)
     },
     {
-        "name": "Test Head",
+        "name": "test head",
         "type": "B",
         "description": "This carries some critical sensitive devices",
         "availability": False,
@@ -41,7 +41,7 @@ instruments_dict = {"Instruments": [
         "check_out": datetime.datetime(2022, 11, 16, 00, 00, 00)
     },
     {
-        "name": "Tester Rack",
+        "name": "tester rack",
         "type": "COMBINED",
         "description": "This contains of bulky instruments",
         "availability": True,
@@ -49,7 +49,7 @@ instruments_dict = {"Instruments": [
         "check_out": datetime.datetime(2022, 11, 16, 00, 00, 00)
     },
     {
-        "name": "Device Interface",
+        "name": "device interface",
         "type": "COMBINED",
         "description": "This sits on top of the TEST HEAD",
         "availability": True,
@@ -57,7 +57,7 @@ instruments_dict = {"Instruments": [
         "check_out": datetime.datetime(2022, 11, 16, 00, 00, 00)
     },
     {
-        "name": "Instrument Cards",
+        "name": "instrument cards",
         "type": "COMBINED",
         "description": "This is Fixed inside the TEST HEAD",
         "availability": False,
@@ -67,7 +67,7 @@ instruments_dict = {"Instruments": [
 ]
 }
 
-instrument_ids = Instrument_Collection.insert_many(instruments_dict["Instruments"])
+instrument_ids = Instrument_Collection.insert_many(instruments_dict["instruments"])
 
 user_Collection = mydb["users"]
 user_dict = {"users": [
