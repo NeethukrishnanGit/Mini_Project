@@ -19,7 +19,7 @@ instruments_dict = {"Instruments": [
         "name": "Handler",
         "type": "A",
         "description": "This used to test packaged device and place the component for testing",
-        "Available": True,
+        "Availability": True,
         "Check_IN": "08:24 AM",
         "Check_OUT": "10:00 AM"
      },
@@ -27,7 +27,7 @@ instruments_dict = {"Instruments": [
         "name": "Manipulator",
         "type": "C",
         "description": "This is used to support and tilt the test head",
-        "Available": True,
+        "Availability": True,
         "Check_IN": "12:00 AM",
         "Check_OUT": "03:30 PM"
     },
@@ -35,7 +35,7 @@ instruments_dict = {"Instruments": [
         "name": "Test Head",
         "type": "B",
         "description": "This carries some critical sensitive devices",
-        "Available": False,
+        "Availability": False,
         "Check_IN": "01:30 PM",
         "Check_OUT": "04:00 PM"
      },
@@ -43,7 +43,7 @@ instruments_dict = {"Instruments": [
         "name": "Tester Rack",
         "type": "COMBINED",
         "description": "This contains of bulky instruments",
-        "Available": True,
+        "Availability": True,
         "Check_IN": "10:00 AM",
         "Check_OUT": "11:30 AM"
      },
@@ -51,7 +51,7 @@ instruments_dict = {"Instruments": [
         "name": "Device Interface",
         "type": "COMBINED",
         "description": "This sits on top of the TEST HEAD",
-        "Available": True,
+        "Availability": True,
         "Check_IN": "03:00 PM",
         "Check_OUT": "05:00 PM"
      },
@@ -59,7 +59,7 @@ instruments_dict = {"Instruments": [
         "name": "Instrument Cards",
         "type": "COMBINED",
         "description": "This is Fixed inside the TEST HEAD",
-        "Available": False,
+        "Availability": False,
         "Check_IN": "02:00 PM",
         "Check_OUT": "04:00 PM"
     }
