@@ -12,57 +12,57 @@ instruments_dict = {"Instruments": [
         "name": "Prober",
         "type": "A",
         "description": "This is used to test wafer ",
-        "Availability": True,
-        "Check_IN": datetime.datetime(2022, 11, 16, 00, 00, 00),
-        "Check_OUT": datetime.datetime(2022, 11, 16, 00, 00, 00)
+        "availability": True,
+        "check_in": datetime.datetime(2022, 11, 16, 00, 00, 00),
+        "check_out": datetime.datetime(2022, 11, 16, 00, 00, 00)
     },
     {
         "name": "Handler",
         "type": "A",
         "description": "This used to test packaged device and place the component for testing",
-        "Availability": True,
-        "Check_IN": datetime.datetime(2022, 11, 16, 00, 00, 00),
-        "Check_OUT": datetime.datetime(2022, 11, 16, 00, 00, 00)
+        "availability": True,
+        "check_in": datetime.datetime(2022, 11, 16, 00, 00, 00),
+        "check_out": datetime.datetime(2022, 11, 16, 00, 00, 00)
     },
     {
         "name": "Manipulator",
         "type": "C",
         "description": "This is used to support and tilt the test head",
-        "Availability": True,
-        "Check_IN": datetime.datetime(2022, 11, 16, 00, 00, 00),
-        "Check_OUT": datetime.datetime(2022, 11, 16, 00, 00, 00)
+        "availability": True,
+        "check_in": datetime.datetime(2022, 11, 16, 00, 00, 00),
+        "Check_out": datetime.datetime(2022, 11, 16, 00, 00, 00)
     },
     {
         "name": "Test Head",
         "type": "B",
         "description": "This carries some critical sensitive devices",
-        "Availability": False,
-        "Check_IN": datetime.datetime(2022, 11, 16, 00, 00, 00),
-        "Check_OUT": datetime.datetime(2022, 11, 16, 00, 00, 00)
+        "availability": False,
+        "check_in": datetime.datetime(2022, 11, 16, 00, 00, 00),
+        "check_out": datetime.datetime(2022, 11, 16, 00, 00, 00)
     },
     {
         "name": "Tester Rack",
         "type": "COMBINED",
         "description": "This contains of bulky instruments",
-        "Availability": True,
-        "Check_IN": datetime.datetime(2022, 11, 16, 00, 00, 00),
-        "Check_OUT": datetime.datetime(2022, 11, 16, 00, 00, 00)
+        "availability": True,
+        "check_in": datetime.datetime(2022, 11, 16, 00, 00, 00),
+        "check_out": datetime.datetime(2022, 11, 16, 00, 00, 00)
     },
     {
         "name": "Device Interface",
         "type": "COMBINED",
         "description": "This sits on top of the TEST HEAD",
-        "Availability": True,
-        "Check_IN": datetime.datetime(2022, 11, 16, 00, 00, 00),
-        "Check_OUT": datetime.datetime(2022, 11, 16, 00, 00, 00)
+        "availability": True,
+        "check_in": datetime.datetime(2022, 11, 16, 00, 00, 00),
+        "check_out": datetime.datetime(2022, 11, 16, 00, 00, 00)
     },
     {
         "name": "Instrument Cards",
         "type": "COMBINED",
         "description": "This is Fixed inside the TEST HEAD",
-        "Availability": False,
-        "Check_IN": datetime.datetime(2022, 11, 16, 00, 00, 00),
-        "Check_OUT": datetime.datetime(2022, 11, 16, 00, 00, 00)
+        "availability": False,
+        "check_in": datetime.datetime(2022, 11, 16, 00, 00, 00),
+        "check_out": datetime.datetime(2022, 11, 16, 00, 00, 00)
     }
 ]
 }
