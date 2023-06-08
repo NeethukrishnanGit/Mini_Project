@@ -4,7 +4,9 @@ import pymongo
 
 myClient = pymongo.MongoClient("mongodb://localhost:27017/")
 mydb = myClient["employee_asset_management"]
-
+collection = mydb.list_collection_names()
+for each in collection:
+    mydb.drop_collection(each)
 Instrument_Collection = mydb["instruments"]
 
 instruments =[
@@ -124,3 +126,4 @@ audit_dict = [
 ]
 
 audit_data = Audit_Collection.insert_many(audit_dict)
+print(mydb)

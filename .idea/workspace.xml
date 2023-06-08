@@ -17,12 +17,12 @@
       </list>
     </option>
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "last_opened_file_path": "C:/Users/neethukrishnan/Documents/Mini_project_2023_interns/main.py",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/neethukrishnan/Documents/Mini_project_2023_interns/main.py&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Python.uvicorn">
     <configuration name="audit_trial" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Mini_project_2023_interns" />
@@ -90,9 +90,9 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.uvicorn" />
       <item itemvalue="Python.audit_trial" />
       <item itemvalue="Python.db_creator" />
+      <item itemvalue="Python.uvicorn" />
     </list>
     <recent_temporary>
       <list>
